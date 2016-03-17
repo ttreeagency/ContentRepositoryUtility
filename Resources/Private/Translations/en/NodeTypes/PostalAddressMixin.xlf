@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="Ttree.ContentRepositoryUtility" source-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="properties.streetAddress" xml:space="preserve">
+				<source>Street Address</source>
+			</trans-unit>
+            <trans-unit id="properties.postOfficeBoxNumber" xml:space="preserve">
+				<source>Office Box Number</source>
+			</trans-unit>
+            <trans-unit id="properties.postalCode" xml:space="preserve">
+				<source>Postal Code</source>
+			</trans-unit>
+            <trans-unit id="properties.addressLocality" xml:space="preserve">
+				<source>Locality</source>
+			</trans-unit>
+            <trans-unit id="properties.addressRegion" xml:space="preserve">
+				<source>Region</source>
+			</trans-unit>
+            <trans-unit id="properties.addressCountry" xml:space="preserve">
+				<source>Country</source>
+			</trans-unit>
+        </body>
+    </file>
+</xliff>

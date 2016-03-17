@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="Ttree.ContentRepositoryUtility" source-language="en" datatype="plaintext">
+        <body>
+            <trans-unit id="groups.contactInformation" xml:space="preserve">
+				<source>Contact Information</source>
+			</trans-unit>
+            <trans-unit id="properties.email" xml:space="preserve">
+				<source>Email</source>
+			</trans-unit>
+            <trans-unit id="properties.phone" xml:space="preserve">
+				<source>Phone</source>
+			</trans-unit>
+            <trans-unit id="properties.mobile" xml:space="preserve">
+				<source>Mobile Phone</source>
+			</trans-unit>
+            <trans-unit id="properties.fax" xml:space="preserve">
+				<source>Fax</source>
+			</trans-unit>
+            <trans-unit id="properties.website" xml:space="preserve">
+				<source>Website</source>
+			</trans-unit>
+            <trans-unit id="properties.skype" xml:space="preserve">
+				<source>Skype</source>
+			</trans-unit>
+            <trans-unit id="properties.twitter" xml:space="preserve">
+				<source>Twitter</source>
+			</trans-unit>
+            <trans-unit id="properties.facebook" xml:space="preserve">
+				<source>Facebook</source>
+			</trans-unit>
+            <trans-unit id="properties.linkedin" xml:space="preserve">
+				<source>Linkedin</source>
+			</trans-unit>
+        </body>
+    </file>
+</xliff>

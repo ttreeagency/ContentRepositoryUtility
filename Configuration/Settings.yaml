@@ -1,0 +1,81 @@
+Ttree:
+  ContentRepositoryUtility:
+    genericNodeTypePostprocessor:
+      'Switzerland':
+        label: Switzerland
+        mixins:
+          'Ttree.ContentRepositoryUtility:SwitzerlandPostalAddressMixin': TRUE
+        presets:
+          addressRegion:
+            mixins:
+              'Ttree.ContentRepositoryUtility:SwitzerlandAddressRegionMixin': TRUE
+            configuration:
+              properties:
+                addressRegion:
+                  type: string
+                  ui:
+                    inspector:
+                      editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+                      editorOptions:
+                        values:
+                          '':
+                            label: ''
+                          'AG':
+                            label: 'Argovie'
+                          'AI':
+                            label: 'Appenzell Rhodes-Intérieures'
+                          'AR':
+                            label: 'Appenzell Rhodes-Extérieures'
+                          'BE':
+                            label: 'Berne'
+                          'BL':
+                            label: 'Bâle-Campagne'
+                          'BS':
+                            label: 'Bâle-Ville'
+                          'FR':
+                            label: 'Fribourg'
+                          'GE':
+                            label: 'Genève'
+                          'GL':
+                            label: 'Glaris'
+                          'GR':
+                            label: 'Grisons'
+                          'JU':
+                            label: 'Jura'
+                          'LU':
+                            label: 'Lucerne'
+                          'NE':
+                            label: 'Neuchâtel'
+                          'NW':
+                            label: 'Nidwald'
+                          'OW':
+                            label: 'Obwald'
+                          'SG':
+                            label: 'Saint-Gall'
+                          'SH':
+                            label: 'Schaffhouse'
+                          'SO':
+                            label: 'Soleure'
+                          'SZ':
+                            label: 'Schwytz'
+                          'TG':
+                            label: 'Thurgovie'
+                          'TI':
+                            label: 'Tessin'
+                          'UR':
+                            label: 'Uri'
+                          'VD':
+                            label: 'Vaud'
+                          'VS':
+                            label: 'Valais'
+                          'ZG':
+                            label: 'Zoug'
+                          'ZH':
+                            label: 'Zurich'
+
+TYPO3:
+  Neos:
+    userInterface:
+      translation:
+        autoInclude:
+          'Ttree.ContentRepositoryUtility': ['NodeTypes/*']

@@ -1,0 +1,220 @@
+'Ttree.ContentRepositoryUtility:DocumentWithTeaserImageMixin':
+  properties:
+    teaserImage:
+      type: TYPO3\Media\Domain\Model\ImageInterface
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: document
+
+'Ttree.ContentRepositoryUtility:ImagePresetMixin':
+  abstract: TRUE
+  properties:
+    imagePreset:
+      type: string
+      defaultValue: ''
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: image
+          position: 60
+          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            values:
+              '':
+                label: Default
+              small:
+                label: Small
+
+'Ttree.ContentRepositoryUtility:InlineEditableTitleMixin':
+  abstract: TRUE
+  properties:
+    title:
+      ui:
+        inlineEditable: TRUE
+        aloha:
+          placeholder: i18n
+          format:
+            b: false
+            i: false
+            u: false
+            sub: false
+            sup: false
+            p: false
+            h1: false
+            h2: false
+            h3: false
+            pre: false
+            removeFormat: false
+          table: {  }
+          list: {  }
+          link:
+            a: TRUE
+          alignment: {  }
+
+'Ttree.ContentRepositoryUtility:AddressMixin':
+  abstract: TRUE
+  ui:
+    inspector:
+      tabs:
+        address:
+          label: i18n
+          position: 10
+          icon: icon-envelope-alt
+      groups:
+        address:
+          label: i18n
+          position: 10
+          tab: address
+
+'Ttree.ContentRepositoryUtility:ContactInformationMixin':
+  abstract: TRUE
+  superTypes:
+    'Ttree.ContentRepositoryUtility:AddressMixin': TRUE
+  ui:
+    inspector:
+      groups:
+        contactInformation:
+          label: i18n
+          position: 12
+          tab: address
+  properties:
+    email:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: contactInformation
+    phone:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: contactInformation
+          editorOptions:
+            placeholder: '+41 21 312 12 12'
+    mobile:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: contactInformation
+          editorOptions:
+            placeholder: '+41 79 312 12 12'
+    fax:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: contactInformation
+          editorOptions:
+            placeholder: '+41 21 312 12 12'
+    website:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: contactInformation
+          editorOptions:
+            placeholder: 'http://www.domain.com'
+    skype:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: contactInformation
+    twitter:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: contactInformation
+          editorOptions:
+            placeholder: '@pseudo'
+    facebook:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: contactInformation
+          editorOptions:
+            placeholder: 'http://www.facebook.com/userprofile'
+    linkedin:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: contactInformation
+          editorOptions:
+            placeholder: 'http://www.linkedin.com/userprofile'
+
+'Ttree.ContentRepositoryUtility:PostalAddressMixin':
+  abstract: TRUE
+  superTypes:
+    'Ttree.ContentRepositoryUtility:AddressMixin': TRUE
+  properties:
+    streetAddress:
+      type: string
+      ui:
+        reloadIfChanged: TRUE
+        label: i18n
+        inspector:
+          group: address
+          editor: TYPO3.Neos/Inspector/Editors/TextAreaEditor
+    postOfficeBoxNumber:
+      type: string
+      ui:
+        reloadIfChanged: TRUE
+        label: i18n
+        inspector:
+          group: address
+    postalCode:
+      type: string
+      ui:
+        reloadIfChanged: TRUE
+        label: i18n
+        inspector:
+          group: address
+    addressLocality:
+      type: string
+      ui:
+        reloadIfChanged: TRUE
+        label: i18n
+        inspector:
+          group: address
+    addressRegion:
+      type: string
+      ui:
+        reloadIfChanged: TRUE
+        label: i18n
+        inspector:
+          group: address
+    addressCountry:
+      type: string
+      ui:
+        reloadIfChanged: TRUE
+        label: i18n
+        inspector:
+          group: address
+
+'Ttree.ContentRepositoryUtility:SwitzerlandPostalAddressMixin':
+  abstract: TRUE
+  postprocessors:
+    Ttree.ContentRepositoryUtility\NodeTypePostprocessor\GenericNodeTypePostprocessor:
+      postprocessor: Ttree\ContentRepositoryUtility\NodeTypePostprocessor\GenericNodeTypePostprocessor
+
+'Ttree.ContentRepositoryUtility:SwitzerlandAddressRegionMixin':
+  abstract: TRUE
+  superTypes:
+    'Ttree.ContentRepositoryUtility:SwitzerlandPostalAddressMixin': TRUE
