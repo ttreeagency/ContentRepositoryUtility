@@ -1,10 +1,15 @@
 <?php
 namespace Ttree\ContentRepositoryUtility\Eel\FlowQueryOperations;
 
-/*                                                                        *
- * This script belongs to the TYPO3 Flow package "Ttree.Neos.Toolbox".    *
- *                                                                        *
- *                                                                        */
+/*
+ * This file is part of the Ttree.ContentRepositoryUtility package.
+ *
+ * (c) Contributors of the Neos Project - www.neos.io
+ *
+ * This package is Open Source Software. For the full copyright and license
+ * information, please view the LICENSE file which was distributed with this
+ * source code.
+ */
 
 use TYPO3\Eel\FlowQuery\FlowQuery;
 use TYPO3\Eel\FlowQuery\FlowQueryException;
