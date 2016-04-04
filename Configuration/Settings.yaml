@@ -74,8 +74,14 @@ Ttree:
                             label: 'Zurich'
 
 TYPO3:
+
   Neos:
     userInterface:
       translation:
         autoInclude:
           'Ttree.ContentRepositoryUtility': ['NodeTypes/*']
+
+  TypoScript:
+
+    defaultContext:
+      String: 'Ttree\ContentRepositoryUtility\Eel\Helper\StringHelper'

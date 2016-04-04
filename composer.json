@@ -5,7 +5,8 @@
     "keywords": ["TYPO3CR", "node", "eel", "sorting", "filtering"],
     "license": "MIT",
     "require": {
-        "typo3/typo3cr": "~2.1"
+        "typo3/typo3cr": "~2.1",
+        "cocur/slugify": "~2.0"
     },
     "autoload": {
         "psr-4": {
