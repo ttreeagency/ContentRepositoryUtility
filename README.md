@@ -10,6 +10,10 @@ This package contains utilities to work with the Neos Project Content Repository
  * [FilterByDateOperation](Classes/Eel/FlowQueryOperations/FilterByDateOperation.php): Filter nodes by date properties
  * [SortOperation](Classes/Eel/FlowQueryOperations/SortOperation.php): Sort nodes
  
+## EEL Helper 
+
+ * [StringHelper](Classes/Eel/Helper/StringHelper.php): StringHelper (slugify)
+ 
 ## Node Type Mixins
 
  * Postal Address
