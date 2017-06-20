@@ -73,10 +73,6 @@ Ttree:
                             label: Zoug
                           ZH:
                             label: Zurich
-TYPO3:
-  TypoScript:
-    defaultContext:
-      String: Ttree\ContentRepositoryUtility\Eel\Helper\StringHelper
 Neos:
   Neos:
     userInterface:
@@ -84,3 +80,6 @@ Neos:
         autoInclude:
           Ttree.ContentRepositoryUtility:
             - 'NodeTypes/*'
+  Fusion:
+    defaultContext:
+      String: Ttree\ContentRepositoryUtility\Eel\Helper\StringHelper
