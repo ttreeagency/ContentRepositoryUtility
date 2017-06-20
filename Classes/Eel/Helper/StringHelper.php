@@ -11,7 +11,7 @@ namespace Ttree\ContentRepositoryUtility\Eel\Helper;
  * source code.
  */
 
-use TYPO3\Flow\Annotations as Flow;
+use Neos\Flow\Annotations as Flow;
 use TYPO3\Eel\Helper;
 use Cocur\Slugify\Slugify;
 

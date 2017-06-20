@@ -1,8 +1,8 @@
 <?php
 namespace Ttree\ContentRepositoryUtility\NodeTypePostprocessor;
 
-use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Flow\Utility\Arrays;
+use Neos\Flow\Annotations as Flow;
+use Neos\Flow\Utility\Arrays;
 use TYPO3\TYPO3CR\Domain\Model\NodeType;
 use TYPO3\TYPO3CR\NodeTypePostprocessor\NodeTypePostprocessorInterface;
 
