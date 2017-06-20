@@ -3,8 +3,8 @@ namespace Ttree\ContentRepositoryUtility\NodeTypePostprocessor;
 
 use Neos\Flow\Annotations as Flow;
 use Neos\Utility\Arrays;
-use TYPO3\TYPO3CR\Domain\Model\NodeType;
-use TYPO3\TYPO3CR\NodeTypePostprocessor\NodeTypePostprocessorInterface;
+use Neos\ContentRepository\Domain\Model\NodeType;
+use Neos\ContentRepository\NodeTypePostprocessor\NodeTypePostprocessorInterface;
 
 /**
  * GenericNodeTypePostprocessor
