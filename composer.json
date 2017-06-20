@@ -1,17 +1,17 @@
 {
     "name": "ttree/contentrepositoryutility",
-    "type": "typo3-flow-package",
+    "type": "neos-package",
     "description": "Utilities to work with the Neos Project Content Repository",
     "keywords": [
-        "TYPO3CR",
-        "node",
-        "eel",
-        "sorting",
-        "filtering"
+        "Neos CMS",
+        "Content Repository",
+        "EEL",
+        "Sorting",
+        "Filtering"
     ],
     "license": "MIT",
     "require": {
-        "typo3/typo3cr": "~2.1",
+        "neos/content-repository": "~3.0",
         "cocur/slugify": "~2.0"
     },
     "autoload": {
