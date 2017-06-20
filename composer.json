@@ -2,7 +2,13 @@
     "name": "ttree/contentrepositoryutility",
     "type": "typo3-flow-package",
     "description": "Utilities to work with the Neos Project Content Repository",
-    "keywords": ["TYPO3CR", "node", "eel", "sorting", "filtering"],
+    "keywords": [
+        "TYPO3CR",
+        "node",
+        "eel",
+        "sorting",
+        "filtering"
+    ],
     "license": "MIT",
     "require": {
         "typo3/typo3cr": "~2.1",
@@ -12,5 +18,10 @@
         "psr-4": {
             "Ttree\\ContentRepositoryUtility\\": "Classes"
         }
+    },
+    "extra": {
+        "applied-flow-migrations": [
+            "TYPO3.FLOW3-201201261636"
+        ]
     }
 }
