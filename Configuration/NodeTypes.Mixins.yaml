@@ -20,7 +20,7 @@
         inspector:
           group: image
           position: 60
-          editor: TYPO3.Neos/Inspector/Editors/SelectBoxEditor
+          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             values:
               '':
@@ -171,7 +171,7 @@
         label: i18n
         inspector:
           group: address
-          editor: TYPO3.Neos/Inspector/Editors/TextAreaEditor
+          editor: Neos.Neos/Inspector/Editors/TextAreaEditor
     postOfficeBoxNumber:
       type: string
       ui:
